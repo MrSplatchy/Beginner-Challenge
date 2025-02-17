@@ -10,9 +10,9 @@ import Vector "mo:vector";
 actor {
     stable var autoIndex = 0;
 
-    let userIDMap = Map.new<Principal, Nat>();
-    let userProfileMap = Map.new<Nat, Text>();
-    let userResultsMap = Map.new<Nat, Vector.Vector<Text>>();
+    stable let userIDMap = Map.new<Principal, Nat>();
+    stable let userProfileMap = Map.new<Nat, Text>();
+    stable let userResultsMap = Map.new<Nat, Vector.Vector<Text>>();
 
 
     public query ({ caller }) func getUserProfile() : async Result.Result<{ id : Nat; name : Text }, Text> {
