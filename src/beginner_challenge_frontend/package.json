@@ -22,7 +22,7 @@
   "devDependencies": {
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "@vitejs/plugin-react": "latest",
+    "@vitejs/plugin-react": "^1.3.2",
     "dotenv": "latest",
     "prettier": "latest",
     "sass": "latest",
