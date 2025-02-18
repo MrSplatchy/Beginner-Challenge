@@ -1,4 +1,4 @@
-import Result "mo:base/Result";
+  import Result "mo:base/Result";
 import Text "mo:base/Text";
 import Map "mo:map/Map";
 import { phash; nhash} "mo:map/Map";
@@ -29,8 +29,7 @@ actor {
         };
 
         return #ok({ id = userId; name = foundName });
-    };
-
+    };                                                                                                    
     public shared ({ caller }) func setUserProfile(name : Text) : async Result.Result<{ id : Nat; name : Text }, Text> {
         Debug.print(debug_show caller);
         // check if user already exists
